@@ -1,8 +1,10 @@
 import app from './app.js';
 import log from 'npmlog';
+import dotenv from 'dotenv';
+dotenv.config();
 
-const PORT = 3010;
+const appPort = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-  log.info(`Express API running on ${PORT}`);
+app.listen(appPort, () => {
+  log.info(`Express API running on ${appPort}`);
 });
