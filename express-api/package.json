@@ -2,9 +2,11 @@
   "name": "express-api",
   "version": "0.0.1",
   "description": "API built with ExpressJS that serves information to client",
+  "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js",
+    "test": "jest src"
   },
   "repository": {
     "type": "git",
@@ -27,9 +29,11 @@
   },
   "homepage": "https://github.com/kpedrozag/js-based-app#readme",
   "dependencies": {
-    "express": "4.18.1"
+    "express": "4.18.1",
+    "npmlog": "^6.0.2"
   },
   "devDependencies": {
-    "jest": "^28.1.0"
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16"
   }
 }
