@@ -19,6 +19,7 @@ app.use((error, req, res, next) => {
       error: { name, message, stack },
     });
   }
+
   return res.status(500).send({
     msg: 'Something went wrong',
     error,
